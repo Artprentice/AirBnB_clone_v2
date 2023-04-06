@@ -12,7 +12,7 @@ env.hosts = ['34.138.32.248', '3.226.74.205']
 
 @runs_once
 def do_pack():
-    """Archives the static files."""
+    """This archives the static files."""
     if not os.path.isdir("versions"):
         os.mkdir("versions")
     cur_time = datetime.now()

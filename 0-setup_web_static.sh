@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# sets up my web servers for the deployment of web_static
+# sets up my web servers for the web_static deployment
 
 echo -e "\e[1;32m START\e[0m"
 
@@ -9,7 +9,7 @@ sudo apt-get -y install nginx
 echo -e "\e[1;32m Packages updated\e[0m"
 echo
 
-#--configure firewall
+#--configuring firewall
 sudo ufw allow 'Nginx HTTP'
 echo -e "\e[1;32m Allow incomming NGINX HTTP connections\e[0m"
 echo
