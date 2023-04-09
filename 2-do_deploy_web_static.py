@@ -6,6 +6,8 @@ archive to the web servers
 
 from fabric.api import put, run, env
 from os.path import exists
+
+env.key_filename = './0-RSA_public_key'
 env.hosts = ['54.144.150.231', '18.204.13.57']
 
 
